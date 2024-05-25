@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Shoenza Store</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<style>
+    .headerI nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .headerI nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    .headerI nav ul li a {
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        background-color: #00B6A9;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #3C3C3C;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    body {
+        background-image: url("https://img.freepik.com/premium-vector/flat-sneakers-seamless-pattern-stylish-sportswear-trendy-fitness-training-shoes-modern-casual-footwear-flat-vector-background-illustration_627510-1946.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .account-info {
+        width: 40%;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .account-info h2 {
+        text-align: center;
+    }
+
+    .account-info p {
+        margin: 10px 0;
+    }
+
+    footer {
+        height: 3%;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #00B6A9;
+        color: white;
+        padding: 10px 0;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="headerI">
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="ProductPage.html" class="shake">Product Page</a>
+                        <div class="dropdown-content">
+                            <a href="ProductPage.html">Category</a>
+                            <div class="dropdown-content2"> <!-- Nested dropdown content -->
+                                <a href="ProductPage.html">Best Selling</a>
+                                <a href="ProductPage.html">On Sale</a>
+                                <a href="ProductPage.html">Featured</a>
+                                <a href="ProductPage.html">With Vouchers</a>
+                            </div>
+                            <a href="ProductPage.html">Product Details</a>
+                            <a href="ProductPage.html">Purchase Now</a>
+                            <a href="ProductPage.html">Wish list</a>
+                            <a href="ProductPage.html">Add to Cart</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="Home.html" class="shake">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="AboutUs.html" class="shake">About Us</a>
+                        <div class="dropdown-content">
+                            <a href="AboutUs.html">Our Story</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="ViewCart.html" class="shake">View Cart</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="ContactUs.html" class="shake">Contact Us</a>
+                        <div class="dropdown-content">
+                            <a href="ContactUs.html">Message us</a>
+                            <a href="ContactUs.html">Call us</a>
+                            <a href="ContactUs.html">E-mail us</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="Account.html" class="shake">Account</a>
+                        <div class="dropdown-content">
+                            <a href="Account.html">Sign In</a>
+                            <a href="Account.html">Register</a>
+                            <a href="Account.html">Profile</a>
+                            <a href="Account.html">Payment Method</a>
+                            <a href="Account.html">Purchase History</a>
+                            <a href="Account.html">Orders</a>
+                            <a href="Account.html">Password</a>
+                            <a href="Account.html">Vouchers</a>
+                            <a href="Account.html">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="account-info">
+        <h2>Account Information</h2>
+        <p>Username: JohnDoe</p>
+        <p>Email: johndoe@example.com</p>
+        <p>Address: 123 Main Street, City, Country</p>
+        <p>Phone: +1234567890</p>
+        <button onclick="window.location.href='#'">Sign In</button>
+<button onclick="window.location.href='#'">Register</button>
+<button onclick="window.location.href='#'">Profile</button>
+<button onclick="window.location.href='#'">Payment Method</button>
+<button onclick="window.location.href='#'">Purchase History</button>
+<button onclick="window.location.href='#'">Orders</button>
+<button onclick="window.location.href='#'">Password</button>
+<button onclick="window.location.href='#'">Vouchers</button>
+<button onclick="window.location.href='#'">Logout</button>
+
+
+    </div>
+    
+
+<br>
+
+    <footer>
+        <div>
+            <p>&copy; 2024 Shoenza Store Corp. | #Shoes;#Durability;#Fashion</p>
+        </div>
+    </footer>
+</body>
+</html>
+

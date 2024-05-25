@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoenza Home</title>
+	<link rel="stylesheet" href="Style.css">
+	<script src="js/script.js"></script>
+    
+</head>
+
+<style>
+        
+        
+
+        .headerI nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .headerI nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .headerI nav ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #00B6A9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+		
+		.dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3C3C3C;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+		
+		.dropdown-content .dropdown-content2 {
+            display: none;
+            position: absolute;
+            background-color: #3C3C3C;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content:hover .dropdown-content2,
+        .dropdown-content2:hover {
+            display: block;
+        }
+		
+		body {
+        background-image: url("https://img.freepik.com/premium-vector/flat-sneakers-seamless-pattern-stylish-sportswear-trendy-fitness-training-shoes-modern-casual-footwear-flat-vector-background-illustration_627510-1946.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="headerI">
+            <img src="https://cdn.discordapp.com/attachments/564818821400100884/1243875160852004884/new-arrivals-shoes-social-media-post-template-design.png?ex=66531084&is=6651bf04&hm=069ad22959bb59569408edff189fd373a26800a48092be9335617fc19434f8c6&" alt="LOGO" width="250" height="140" border="1" style="margin-left: auto;">
+            <nav>
+                <ul>
+                    <li class="dropdown">
+					     <a href="ProductPage.html" class="shake">Product Page</a>
+						 <div class="dropdown-content">
+						    <a href="ProductPage.html">Category</a>
+							    <div class="dropdown-content2"> <!-- Nested dropdown content -->
+                                    <a href="ProductPage.html">Best Selling</a>
+                                    <a href="ProductPage.html">On Sale</a>
+                                    <a href="ProductPage.html">Featured</a>
+                                    <a href="ProductPage.html">With Vouchers</a>
+                                </div>
+                            <a href="ProductPage.html">Product Details</a>
+                            <a href="ProductPage.html">Purchase Now</a>
+                            <a href="ProductPage.html">Wish list</a>
+                            <a href="ProductPage.html">Add to Cart</a>							
+						 </div>
+					</li>
+					<li class="dropdown">
+					     <a href="Home.html" class="shake">Home</a>
+						 
+					</li>
+                    <li class="dropdown">
+					     <a href="AboutUs.html" class="shake">About Us</a>
+						 <div class="dropdown-content">
+						    <a href="AboutUs.html">Our Story</a>                         
+						 </div>
+					</li>
+                    <li class="dropdown">
+					     <a href="ViewCart.html" class="shake">View Cart</a>
+                        <div class="dropdown-content">
+                            <a href="ViewCart.html">Remove Item</a>
+                            <a href="ViewCart.html">Add Item</a>
+                            <a href="ViewCart.html">Order Now</a>
+                            <a href="ViewCart.html">Payment Method</a>
+						 </div>
+					</li>
+                    <li class="dropdown">
+					     <a href="ContactUs.html" class="shake">Contact Us</a>
+						 <div class="dropdown-content">
+						    <a href="ContactUs.html">Message us</a>
+                            <a href="ContactUs.html">Call us</a>
+                            <a href="ContactUs.html">E-mail us</a>
+						 </div>
+					</li>
+                    <li class="dropdown">
+                        <a href="#" class="shake">Account</a>
+                        <div class="dropdown-content">
+                            <a href="Account.html">Sign In</a>
+                            <a href="Account.html">Register</a>
+                            <a href="Account.html">Profile</a>
+                            <a href="Account.html">Payment Method</a>
+                            <a href="Account.html">Purchase History</a>
+                            <a href="Account.html">Orders</a>
+                            <a href="Account.html">Password</a>
+                            <a href="Account.html">Vouchers</a>
+                            <a href="Account.html">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="myDiv" style="width: 40%; position: absolute; top: 310px; left: 550px;">
+        <h2>Welcome to shoenza store</h2>
+		<br>
+        <p>Welcome please feel free to check out our latest items in stock</p>
+		<br>
+        <p>Shoenza offers you shoes that are not too cheap and not to high in price all while ensuring durability and long lifespan</p>
+		<img src="https://img.freepik.com/free-vector/random-female-shoes-flat-illustrations-set-summer-autumn-winter-foot-wear-women-moccasins-boots-trainers-heels-isolated-white_74855-20699.jpg?w=826&t=st=1715356271~exp=1715356871~hmac=e4b735f0d23dcaddb85eb83dabf5ab0f3b6125075a9d40f7af4f0ad80bd1f474" alt="Shoes" style="width: 50%;">
+    </div>
+    
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	
+    <footer class="footer"style="height: 3%;">
+        <div>
+            <p>&copy; 2024 Shoenza Store Corp. | #Shoes;#Durability;#Fashion</p>
+        </div>
+    </footer>
+</body>
+</html>

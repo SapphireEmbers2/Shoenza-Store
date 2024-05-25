@@ -1,0 +1,151 @@
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+
+header {
+   background-color: #009688;
+   color: #fff;
+   text-align: center;
+   padding: 20px 0;
+}
+
+
+img {
+   display: block;
+   margin: 0 auto;
+}
+
+
+.w3-container {
+   margin: 20px auto;
+   max-width: 800px;
+   background-color: rgb(130, 224, 170, 0.7);
+   border-radius: 15px;
+   
+}
+
+
+.w3-table {
+   width: 100%;
+   margin-bottom: 20px;
+}
+
+
+.w3-table th, .w3-table td {
+   padding: 10px;
+   text-align: left;
+}
+
+
+.w3-table th {
+   background-color: #009688;
+   color: #fff;
+}
+
+
+.w3-card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   transition: 0.3s;
+   margin-bottom: 20px;
+   background-color: rgb(231, 76, 60, 0.7);
+   border-radius: 15px;
+}
+
+
+.w3-card img {
+   width: 100%;
+}
+
+
+.w3-card p {
+   padding: 10px;
+}
+
+
+footer {
+   background-color: #009688;
+   color: #fff;
+   text-align: center;
+   padding: 20px 0;
+}
+
+header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3C3C3C;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+			
+        }
+
+        .headerI nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .headerI nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .headerI nav ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #00B6A9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .myDiv {
+            border: 5px outset rgba(192, 192, 192, 10);
+            background-color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            border-radius: 25px;
+            padding: 5px;
+            color: white;
+        }
+
+        .footer {
+            background-color: #FF002E;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid;
+            border-radius: 8px;
+            width: 1800px;
+            height: 100px;
+        }
+
+        .footer p {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        body {
+            background-image: url("https://cdn.discordapp.com/attachments/542359794233769988/1238497444287873165/black-brick-wall-textured-background_53876-63572.png?ex=663f8020&is=663e2ea0&hm=929acba8e8501cb618f1b972636ce27bd69a115d4b8db8aefa566442c68261df&");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        /* Shake animation */
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+
+        .shake:hover {
+            animation: shake 0.5s ease;
+        }
