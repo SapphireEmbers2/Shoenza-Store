@@ -7,7 +7,30 @@
     <link rel="stylesheet" href="Style.css">
 </head>
 
+
+
 <style>
+
+    .payment-method {
+            display: none;
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+        }
+
+        .payment-method label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .payment-method input[type="radio"] {
+            margin-right: 5px;
+        }
+
     .headerI nav ul {
         list-style-type: none;
         margin: 0;
@@ -154,6 +177,14 @@
     </header>
 
     <div class="account-info">
+<div class="payment-method" id="payment-method1">
+            <label><input type="radio" name="payment_method" value="credit_card"> Credit Card</label>
+            <label><input type="radio" name="payment_method" value="paypal"> PayPal</label>
+            <label><input type="radio" name="payment_method" value="bank_transfer"> Bank Transfer</label>
+            <label><input type="radio" name="payment_method" value="cash"> Cash</label>
+            <label><input type="radio" name="payment_method" value="check"> Check</label>
+            <label><input type="radio" name="payment_method" value="crypto"> Cryptocurrency</label>
+        </div>
         <h2>Account Information</h2>
         <p>Username: JohnDoe</p>
         <p>Email: johndoe@example.com</p>
@@ -162,7 +193,7 @@
         <button onclick="window.location.href='#'">Sign In</button>
 <button onclick="window.location.href='#'">Register</button>
 <button onclick="window.location.href='#'">Profile</button>
-<button onclick="window.location.href='#'">Payment Method</button>
+<button id="payment_button" type="button" onclick="togglePayment()">Payment Method</button></p>
 <button onclick="window.location.href='#'">Purchase History</button>
 <button onclick="window.location.href='#'">Orders</button>
 <button onclick="window.location.href='#'">Password</button>
@@ -171,6 +202,20 @@
 
 
     </div>
+
+<script>
+        function togglePayment() {
+            var paymentMethod1 = document.getElementById('payment-method1');
+            var paymentMethod2 = document.getElementById('payment-method2');
+            if (paymentMethod1.style.display === 'block') {
+                paymentMethod1.style.display = 'none';
+                paymentMethod2.style.display = 'none';
+            } else {
+                paymentMethod1.style.display = 'block';
+                paymentMethod2.style.display = 'block';
+            }
+        }
+    </script>
     
 
 <br>

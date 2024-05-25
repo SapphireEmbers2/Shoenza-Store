@@ -8,13 +8,68 @@
 </head>
 
 <style>
-body {
-        background-image: url("https://img.freepik.com/premium-vector/flat-sneakers-seamless-pattern-stylish-sportswear-trendy-fitness-training-shoes-modern-casual-footwear-flat-vector-background-illustration_627510-1946.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-    }
-</style>
+        
+
+        .payment-method {
+            display: none;
+            position: absolute;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+        }
+
+        .payment-method label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .payment-method input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .item-details {
+            flex: 3;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-right: 1px solid #ccc;
+        }
+
+        .sidebar h3 {
+            margin-bottom: 15px;
+        }
+
+        .sidebar label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .sidebar input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .item {
+            margin-bottom: 30px;
+        }
+
+        .item img {
+            display: block;
+            margin-top: 10px;
+            width: 300px;
+            height: auto;
+        }
+    </style>
 <body>
     <header>
         <div class="headerI">
@@ -54,25 +109,65 @@ body {
     </header>
 
     
-    <div class="item-details">
-        <h2>Item Details</h2>
-        <div class="item">
-            <h3>Grey Windz Shoe</h3>
-            <p>Material: Synthetic leather</p>
-            <p>Durability: Suitable for casual use, moderate durability</p>
-            <img src="https://images.pexels.com/photos/1456733/pexels-photo-1456733.jpeg" alt="Grey Windz Shoe" width="300">
+    <div class="container">
+        
+        <div class="sidebar">
+            <h3>Categories</h3>
+            <label><input type="radio" name="category" value="best_selling"> Best Selling</label>
+            <label><input type="radio" name="category" value="on_sale"> On Sale</label>
+            <label><input type="radio" name="category" value="featured"> Featured</label>
+            <label><input type="radio" name="category" value="with_vouchers"> With Vouchers</label>
+            <div class="payment-method" id="payment-method1">
+            <label><input type="radio" name="payment_method" value="credit_card"> Credit Card</label>
+            <label><input type="radio" name="payment_method" value="paypal"> PayPal</label>
+            <label><input type="radio" name="payment_method" value="bank_transfer"> Bank Transfer</label>
+            <label><input type="radio" name="payment_method" value="cash"> Cash</label>
+            <label><input type="radio" name="payment_method" value="check"> Check</label>
+            <label><input type="radio" name="payment_method" value="crypto"> Cryptocurrency</label>
+            </div>
+
+        <p><button type="button" onclick="alert('Added to cart!')">Add to Cart</button> | <button type="button" onclick="alert('Item Removed!')">Remove Item</button> | <button type="button" onclick="alert('Your Item has been ordered!')">Order Now</button> | <button id="payment_button" type="button" onclick="togglePayment()">Payment Method</button></p>
+
         </div>
-        <div class="item">
-            <h3>Black with Orange Streak</h3>
-            <p>Material: Mesh upper with rubber sole</p>
-            <p>Durability: Suitable for sports and outdoor activities, high durability</p>
-            <img src="https://images.pexels.com/photos/1280064/pexels-photo-1280064.jpeg" alt="Black with Orange Streak" width="300">
-        </div>
-        <div class="item">
-            <h3>Red Windz</h3>
-            <p>Material: Textile upper with synthetic sole</p>
-            <p>Durability: Suitable for casual wear, moderate durability</p>
-            <img src="https://images.pexels.com/photos/1456740/pexels-photo-1456740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Red Windz" width="300">
+
+<script>
+        function togglePayment() {
+            var paymentMethod1 = document.getElementById('payment-method1');
+            var paymentMethod2 = document.getElementById('payment-method2');
+            if (paymentMethod1.style.display === 'block') {
+                paymentMethod1.style.display = 'none';
+                paymentMethod2.style.display = 'none';
+            } else {
+                paymentMethod1.style.display = 'block';
+                paymentMethod2.style.display = 'block';
+            }
+        }
+    </script>
+
+       
+        <div class="item-details">
+            <h2>Item Details</h2>
+            <div class="item">
+                <h3>Grey Windz Shoe</h3>
+                <p>Material: Synthetic leather</p>
+                <p>Durability: Suitable for casual use, moderate durability</p>
+                <img src="https://images.pexels.com/photos/1456733/pexels-photo-1456733.jpeg" alt="Grey Windz Shoe">
+                <label><input type="radio" name="item" value="grey_windz"> Add to Cart</label>
+            </div>
+            <div class="item">
+                <h3>Black with Orange Streak</h3>
+                <p>Material: Mesh upper with rubber sole</p>
+                <p>Durability: Suitable for sports and outdoor activities, high durability</p>
+                <img src="https://images.pexels.com/photos/1280064/pexels-photo-1280064.jpeg" alt="Black with Orange Streak">
+                <label><input type="radio" name="item" value="black_orange"> Add to Cart</label>
+            </div>
+            <div class="item">
+                <h3>Red Windz</h3>
+                <p>Material: Textile upper with synthetic sole</p>
+                <p>Durability: Suitable for casual wear, moderate durability</p>
+                <img src="https://images.pexels.com/photos/1456740/pexels-photo-1456740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Red Windz">
+                <label><input type="radio" name="item" value="red_windz"> Add to Cart</label>
+            </div>
         </div>
     </div>
 

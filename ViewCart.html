@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="Style.css">
     <script src="js/script.js"></script>
     <style>
-        /* Your existing CSS styles */
-        /* Add new styles for the radio button lists */
+        
+        
         .payment-method {
             display: none;
             position: absolute;
@@ -29,7 +29,7 @@
             margin-right: 5px;
         }
 
-        /* New styles for item container and images */
+        
         .item-container {
             display: flex;
             justify-content: space-around;
@@ -114,6 +114,14 @@
             </div>
             <div>
                 <p>Item 3 - Red Windz</p>
+                <div class="payment-method" id="payment-method1">
+            <label><input type="radio" name="payment_method" value="credit_card"> Credit Card</label>
+            <label><input type="radio" name="payment_method" value="paypal"> PayPal</label>
+            <label><input type="radio" name="payment_method" value="bank_transfer"> Bank Transfer</label>
+            <label><input type="radio" name="payment_method" value="cash"> Cash</label>
+            <label><input type="radio" name="payment_method" value="check"> Check</label>
+            <label><input type="radio" name="payment_method" value="crypto"> Cryptocurrency</label>
+        </div>
                 <img src="https://images.pexels.com/photos/1456740/pexels-photo-1456740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Red Windz">
                 <label><input type="radio" name="item" value="red_windz"> Add to Cart</label>
             </div>
@@ -143,3 +151,10 @@
     </script>
 </body>
 </html>
+
+
+
+
+
+        
+        
